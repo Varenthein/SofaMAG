@@ -17,12 +17,12 @@
 			<div class="bb-custom-wrapper">
 
 				<div id="bb-bookblock" class="bb-bookblock">
-					<div class="bb-item">
-						<div class="bb-custom-firstpage">
-							<h1>SofaMagazyn</h1>
+					<div class="bb-item" style="background:transparent">
+						<div class="bb-custom-side" style="background:transparent">
+							<p></p>
 						</div>
-						<div class="bb-custom-side">
-							<p>Pastry bear claw oat cake danish croissant jujubes danish. Wypas soufflé muffin. Liquorice powder pastry danish. Candy toffee gummi bears chocolate bar lollipop applicake chocolate cake danish brownie.</p>
+						<div class="bb-custom-firstpage">
+							<img src="IssueNr4/cover.png" style="width:100%">
 						</div>
 					</div>
 					<div class="bb-item">
@@ -157,6 +157,7 @@
 					console.log("WIN");
 
 					var container = document.querySelector('.container');
+
 	    		var width = window.innerWidth;
 	    		var height = window.innerHeight;
 	    		var scale;
@@ -164,9 +165,10 @@
 					if(container.clientHeight > height) {
 	    			scale = Math.min(width/container.clientWidth, height/container.clientHeight);
 	    			container.style.transform = 'scale(' + scale + ')';
-						console.dir(scale);
-						container.style.width = container.clientWidth * scale
-						container.style.height = container.clientHeight * scale;
+						container.style.width = width;
+						//console.log(container.style.width);
+
+						//container.style.height = height  * scale + "px";
 					}
 
 			}

@@ -48,13 +48,14 @@ a img {
 }
 
 .container {
-	height: 1000px;
+	height: 1200px;
 	padding:20px;
 	width:1800px;
 	margin: 0 auto;
 	overflow: hidden;
 	transform: scale(1);
 	transform-origin: top left;
+
 
 }
 

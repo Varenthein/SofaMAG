@@ -10,8 +10,9 @@
 }
 
 .bb-custom-wrapper {
-	width: 100%;
-	height: 100%;
+	height: 1200px;
+	padding:20px;
+	width:1800px
 	position: relative;
 }
 
@@ -28,23 +29,7 @@
 	height: 100%;
 	overflow: hidden;
 	background: #fff;
-	/* Centering with flexbox */
-	display: -webkit-box;
-	display: -moz-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: center;
-	-moz-box-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-moz-box-align: center;
-	-webkit-align-items: center;
-	align-items: center;
+
 }
 
 .bb-custom-firstpage h1 {
@@ -64,7 +49,6 @@
 
 .bb-custom-firstpage {
 	text-align: center;
-	padding-top: 15%;
 	width: 50%;
 	float: left;
 	height: 100%;
