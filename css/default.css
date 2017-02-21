@@ -46,7 +46,10 @@ a img {
 	margin: 0 auto;
 	padding: 2em;
 }
-
+.outer {
+	margin: 0 auto;
+	width:1800px;
+}
 .container {
 	height: 1200px;
 	padding:20px;
