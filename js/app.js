@@ -17,3 +17,8 @@ var resizeMag = function() {
 
 window.addEventListener('resize', resizeMag, true); //on window resize make magazine container fit the browser window
 resizeMag(); //fire reziseing at the start
+
+
+//Generate bookblock
+
+var book = querySelector("#bb-bookblock");
