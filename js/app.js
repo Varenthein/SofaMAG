@@ -21,4 +21,13 @@ resizeMag(); //fire reziseing at the start
 
 //Generate bookblock
 
-var book = querySelector("#bb-bookblock");
+var book = document.querySelector("#bb-bookblock");
+
+window.$_GET = location.search.substr(1).split("&").reduce((o,i)=>(u=decodeURIComponent,[k,v]=i.split("="),o[u(k)]=v&&u(v),o),{}); //get data from $_GET
+
+if($_GET['id'] == "undefined") { //if id specified
+  document.querySelector('body').innerHTML = "<p>There is no such file...</p>";
+} else {
+  var issue = data.filter((item) => item.id == $_GET['id']);
+  console.log(issue);
+}
