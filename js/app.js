@@ -1,6 +1,7 @@
 var resizeMag = function() {
 
     var container = document.querySelector('.container'); //get magazine container
+    var outer = document.querySelector('.outer'); //get outer
 
     var width = window.innerWidth; //get browser window width
     var height = window.innerHeight; //get browser window height
@@ -9,7 +10,7 @@ var resizeMag = function() {
     if(container.clientHeight > height) { //if container doesn't fit the browser window
       scale = Math.min(width/container.clientWidth, height/container.clientHeight); //get the scale
       container.style.transform = 'scale(' + scale + ')'; //transform magazine container
-      mmcontainer.style.width = width;
+      outer.style.width = container.clientWidth * scale + "px"; //set new width for scale (it must be smaller because of the conatiner transformation) to get centering working
     }
 
 }
