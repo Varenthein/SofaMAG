@@ -7,6 +7,11 @@ const title_page = function(number) {
   this.get = () => `<img src='source/--${number}/cover.png' style='width:100%' alt="">`;
 }
 
+const image = function(number, img) {
+  this.img = img;
+  this.get = () => `<img src='source/--${number}/${img}' style='width:100%' alt="">`;
+}
+
 const page = function(text = "Empty", type = "content", title = "Untitled", author = "Unknown", category = "No category", main_image = "") {
   this.text = text;
   this.type = type;
@@ -29,8 +34,8 @@ const page = function(text = "Empty", type = "content", title = "Untitled", auth
 
 let data = [{ "id": "1", "title": "SofaMag nr 4", "pages": [
     { "page": "0", "content": new title_page(4).get()},
-    { "page": "1", "content": new page("page 2").get()},
-    { "page": "2", "content": new page("page 3").get()},
+    { "page": "1", "content": "" },
+    { "page": "2", "content": new image(4, '2.png').get()},
     { "page": "3", "content": new page("page 4").get()}
   ]
 }
