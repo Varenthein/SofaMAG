@@ -10,7 +10,7 @@ const image = function(img) {
   this.get = () => `<img src='${issue.url}/img/${img}' style='width:100%' alt="">`;
 }
 
-const page = function(page_nr = 0, excerpt = "", text = "Empty", type = "content", title = "Untitled", author = "Unknown", category = "No category", main_image = "", tags = [], license) {
+const page = function(page_nr = 0, text = "Empty", excerpt = "", type = "content", title = "Untitled", author = "Unknown", category = "No category", main_image = "", tags = [], license) {
   this.text = text;
   this.excerpt = excerpt;
   this.type = type;
