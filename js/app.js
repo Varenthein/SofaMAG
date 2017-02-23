@@ -1,11 +1,12 @@
 const container = document.querySelector('.container'); //get magazine container
 const outer = document.querySelector('.outer'); //get outer
+let zoom = 1; //global zooming setting
 
 //Resizeing mag dunction
 const resizeMag = function() {
 
-    let width = window.innerWidth; //get browser window width
-    let height = window.innerHeight; //get browser window height
+    let width = window.innerWidth * zoom; //get browser window width
+    let height = window.innerHeight * zoom; //get browser window height
     let scale;
 
     if(container.clientHeight > height) { //if container doesn't fit the browser window
@@ -16,7 +17,19 @@ const resizeMag = function() {
 
 }
 
+//Zooming function
+const zoomIt = function(type) {
+    let zoom_var = 0.1; //how far to zoom for every click
+
+    if(type=="down") zoom_var = -zoom_var; //if it zooms down, make it minus
+    zoom = zoom+zoom_var;
+    resizeMag(); //fire resize mag with new settings
+}
+
 window.addEventListener('resize', resizeMag, true); //on window resize make magazine container fit the browser window
+document.querySelector(".bb-custom-icon-zoom-up").addEventListener('click', function() { zoomIt("up") }, true); //zoom up event
+document.querySelector(".bb-custom-icon-zoom-down").addEventListener('click', function() { zoomIt("down") }, true); //zoom up event
+
 resizeMag(); //fire reziseing at the start
 
 //Adding files function
@@ -27,7 +40,6 @@ function loadFile(file_name, file_type, pages_script){
         file.setAttribute("src", file_name)
         file.setAttribute("type", "text/javascript")
         if(pages_script == true) { file.onload = function () {
-          console.log(pages);
           readPages(pages);
         }}
         document.head.appendChild(file);
