@@ -5,31 +5,69 @@
 }
 
 .page header {
-  align-items: flex-end;
+  align-items: flex-start;
   box-sizing: border-box;
   display: flex;
-  height:500px;
+  height:400px;
   flex-wrap: wrap;
   flex-grow: 1;
   flex-direction:column;
   justify-content:flex-end;
-  padding:10px;
-  text-align: left;
+  padding:30px;
   width: 100%;
 }
 
 .page header h1 {
   color:#fff;
   font-size: 40em;
-  ext-transform: capitalize;
+  margin: 15px 0px 20px 0px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 2;
 }
 
-.apge header {
+.page header .fog {
+  background:url('img/fog.png') repeat-x;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+.page header .cat {
   font-size: 20px;
   font-family: "Lato";
+  font-weight: bold;
   color: rgb(255, 255, 255);
   line-height: 1.2;
+  position: relative;
+  z-index: 2;
 }
+
+.page header .tags {
+  font-size:14px;
+  width:100%;
+  position: relative;
+  z-index: 2;
+}
+
+.page header .tags .license {
+  float: right;
+}
+
+.romb {
+  background: #ff0;
+  display: inline-block;
+  margin:0px 10px 0px 3px;
+  width: 18px;
+  height:28px;
+  position:relative;
+  top: 4px;
+  z-index:0;
+  -webkit-transform: skew(-10deg); -moz-transform: skew(-10deg); -o-transform: skew(-10deg);
+}
+
 
 .page .nr {
   display: block;
@@ -63,4 +101,27 @@
 }
 .page .nr:nth-of-type(2n+1) {
   right: 0px;
+}
+
+.page .text {
+  padding: 20px;
+}
+.page .text img {
+  float:left;
+  margin:20px;
+}
+
+.page .text .content {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+   -moz-column-count: 2; /* Firefox */
+   column-count: 2;
+}
+.page .text p strong {
+  font-size: 1.1em;
+}
+.page .text p {
+  text-indent: 20px;
+  font-size: 1.0em;
+  font-weight: 300;
+  padding: 0px 0px 10px 0px;
 }

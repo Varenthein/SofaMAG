@@ -29,6 +29,7 @@
 	height: 100%;
 	overflow: hidden;
 	background: #fff;
+	position: relative;
 
 }
 
@@ -54,11 +55,7 @@
 	height: 100%;
 }
 
-.bb-custom-side p {
-	padding: 8%;
-	font-size: 1.8em;
-	font-weight: 300;
-}
+
 
 .bb-custom-wrapper h3 {
 	font-size: 1.4em;
