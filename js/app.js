@@ -21,15 +21,16 @@ resizeMag(); //fire reziseing at the start
 
 //Adding files function
 
-function loadFile(file_name, file_type){
+function loadFile(file_name, file_type, pages_script){
     if (file_type=="js"){ //if filename is a external JavaScript file
         let file=document.createElement('script')
         file.setAttribute("src", file_name)
         file.setAttribute("type", "text/javascript")
-        file.onload = function () {
+        if(pages_script == true) { file.onload = function () {
+          console.log(pages);
           readPages(pages);
-        }
-        document.querySelector('head').appendChild(file);
+        }}
+        document.head.appendChild(file);
     }
     else if (file_type=="css"){ //if filename is an external CSS file
         var file=document.createElement("link")
@@ -57,7 +58,7 @@ function readPages(pages) {
     </div>
     `;
 
-  book.innerHTML += pages.slice(1).map((item, i) => {
+ book.innerHTML += pages.slice(1).map((item, i) => {
 
      let html = '';
      if(i%2 == 0) html += `<div class="bb-item">`;
@@ -74,6 +75,8 @@ function readPages(pages) {
 
   }).join('');
 
+  Page.init(); //init bookblock
+
 }
 
 window.$_GET = location.search.substr(1).split("&").reduce((o,i)=>(u=decodeURIComponent,[k,v]=i.split("="),o[u(k)]=v&&u(v),o),{}); //get data from $_GET
@@ -86,7 +89,9 @@ if($_GET['id'] == "undefined") { //if id specified
   else {
 
     //load styling files and data
-    loadFile(`${issue[0].url}/pages.js`,"js");
+    loadFile(`templates/${issue[0].template}/template.js`,"js");
+    loadFile(`templates/${issue[0].template}/style.css`,"css");
+    loadFile(`${issue[0].url}/pages.js`,"js",true);
     loadFile(`${issue[0].url}/style.css`,"css");
 
   }
