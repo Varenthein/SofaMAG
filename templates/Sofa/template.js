@@ -1,16 +1,16 @@
 /* Sofa template */
 
-const title_page = function(number) {
+const title_page = function() {
   this.img = "";
-  this.get = () => `<img src='source/--${number}/cover.png' style='width:100%' alt="">`;
+  this.get = () => `<img src='${issue.url}/img/cover.png' style='width:100%' alt="">`;
 }
 
-const image = function(number, img) {
+const image = function(img) {
   this.img = img;
-  this.get = () => `<img src='source/--${number}/${img}' style='width:100%' alt="">`;
+  this.get = () => `<img src='${issue.url}/img/${img}' style='width:100%' alt="">`;
 }
 
-const page = function(text = "Empty", type = "content", title = "Untitled", author = "Unknown", category = "No category", main_image = "") {
+const page = function(page_nr = 0, text = "Empty", type = "content", title = "Untitled", author = "Unknown", category = "No category", main_image = "") {
   this.text = text;
   this.type = type;
   this.title = title;
@@ -18,11 +18,21 @@ const page = function(text = "Empty", type = "content", title = "Untitled", auth
   this.category = category;
   this.main_image = main_image;
   this.get = () => {
-  if(this.type != "with_image") return `<div class="text">${this.text}</div>`;
+  if(this.type != "with_image") {
+     return `
+     <div class="text">${this.text}</div>
+    `;
+  }
   else { return `
-  <header style="background:url('${main_image}') cover">
-    ${title}
-  </header>
-  <img src='source/--${number}/cover.png' style='width:100%' alt="">`; }
+    <span class="nr">${page_nr}</span>
+    <header style="background:url('${issue.url}/img/${this.main_image}');background-size:cover;background-position:center center;">
+      <div class="fog"></div>
+      <span><em></em>${this.category}</span>
+      <h1>${this.title}</h1>
+    </header>
+      <div class="text">
+        ${this.text}
+      </div>
+    `; }
 }
 }

@@ -1,6 +1,7 @@
 const container = document.querySelector('.container'); //get magazine container
 const outer = document.querySelector('.outer'); //get outer
 let zoom = 1; //global zooming setting
+let issue = ""; //global issue variable
 
 //Resizeing mag dunction
 const resizeMag = function() {
@@ -40,9 +41,9 @@ function loadFile(file_name, file_type, pages_script){
         file.setAttribute("src", file_name)
         file.setAttribute("type", "text/javascript")
         if(pages_script == true) { file.onload = function () {
-          readPages(pages);
+          setTimeout(function() { readPages(pages)},1000);
         }}
-        document.head.appendChild(file);
+        document.querySelector('footer').appendChild(file);
     }
     else if (file_type=="css"){ //if filename is an external CSS file
         var file=document.createElement("link")
@@ -72,14 +73,9 @@ function readPages(pages) {
 
  book.innerHTML += pages.slice(1).map((item, i) => {
 
-     let html = '';
-     if(i%2 == 0) html += `<div class="bb-item">`;
-     html += `<div class="bb-custom-side" style="background:transparent">${item.content}
-     </div>`;
-     if(i%2 != 0) html += `</div>`;
      return `
      ${(i%2==0) ? '<div class="bb-item">' : ''}
-        <div class="bb-custom-side">
+        <div class="bb-custom-side page">
           ${item.content}
         </div>
      ${(i%2!=0) ? '</div>' : ''}
@@ -96,15 +92,17 @@ window.$_GET = location.search.substr(1).split("&").reduce((o,i)=>(u=decodeURICo
 if($_GET['id'] == "undefined") { //if id specified
   document.querySelector('body').innerHTML = "<p>There is no such file...</p>";
 } else {
-  let issue = data.filter(item => item.id == $_GET['id'] );
+  issue = data.filter(item => item.id == $_GET['id'] );
   if(issue.length < 1) document.querySelector('body').innerHTML = "<p>There is no such file...</p>"; //if there is no book with such id
   else {
 
+    issue = issue[0];
+    
     //load styling files and data
-    loadFile(`templates/${issue[0].template}/template.js`,"js");
-    loadFile(`templates/${issue[0].template}/style.css`,"css");
-    loadFile(`${issue[0].url}/pages.js`,"js",true);
-    loadFile(`${issue[0].url}/style.css`,"css");
+    loadFile(`templates/${issue.template}/template.js`,"js");
+    loadFile(`templates/${issue.template}/style.css`,"css");
+    loadFile(`${issue.url}/pages.js`,"js",true);
+    loadFile(`${issue.url}/style.css`,"css");
 
   }
 }
