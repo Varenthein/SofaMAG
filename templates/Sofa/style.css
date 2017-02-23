@@ -99,8 +99,8 @@
   z-index:0;
   -webkit-transform: skew(-10deg); -moz-transform: skew(-10deg); -o-transform: skew(-10deg);
 }
-.page .nr:nth-of-type(2n+1) {
-  right: 0px;
+.page:nth-of-type(2n) .nr {
+  left: 780px;
 }
 
 .page .text {
@@ -108,7 +108,7 @@
 }
 .page .text img {
   float:left;
-  margin:20px 20px 0px 0px;
+  margin:0px 20px 0px 10px;
   width: 300px;
 }
 
@@ -119,10 +119,13 @@
 }
 .page .text p strong {
   font-size: 1.1em;
+  margin-top:10px;
 }
 .page .text p {
+  color: #2f2f2f;
   text-indent: 20px;
   font-size: 1.0em;
   font-weight: 300;
   padding: 0px 0px 10px 0px;
+  margin: 0px 10px 10px 10px;
 }
