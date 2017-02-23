@@ -23,12 +23,15 @@ const page = function(page_nr = 0, text = "Empty", type = "content", title = "Un
      <div class="text">${this.text}</div>
     `;
   }
-  else { return `
-    <span class="nr">${page_nr}</span>
+  else {
+    let title_len = this.title.length;
+    let title_size = 100-this.title.length+'px';
+    return `
+    <span class="nr"><strong>${page_nr}</strong></span>
     <header style="background:url('${issue.url}/img/${this.main_image}');background-size:cover;background-position:center center;">
       <div class="fog"></div>
-      <span><em></em>${this.category}</span>
-      <h1>${this.title}</h1>
+      <div class="cat">${this.category}</div>
+      <h1 style="font-size:${title_size}">${this.title}</h1>
     </header>
       <div class="text">
         ${this.text}

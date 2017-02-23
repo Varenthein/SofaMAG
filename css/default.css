@@ -57,9 +57,12 @@ a img {
 	margin: 0 auto;
 	overflow: hidden;
 	transition: transform 0.5s;
-	transform: scale(1);
+	transform: scale(1) perspective(1px) translateZ(0);
 	transform-origin: top left;
-
+	backface-visibility: hidden;
+	-webkit-transform: translate(-50%,-50%);
+	zoom: 100%;
+	-webkit-perspective: 1000;
 
 }
 
