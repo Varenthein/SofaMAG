@@ -53,6 +53,7 @@ a img {
 }
 .container {
 	cursor: grab;
+  cursor: -webkit-grab;
 	height: 1200px;
 	padding:20px;
 	width:1800px;
