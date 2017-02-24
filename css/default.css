@@ -23,6 +23,7 @@ body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #777;
 	background: #2f2f2f;
+	overflow: hidden;
 }
 
 a {
@@ -51,6 +52,7 @@ a img {
 	width:1800px;
 }
 .container {
+	cursor: grab;
 	height: 1200px;
 	padding:20px;
 	width:1800px;
