@@ -10,14 +10,10 @@ const resizeMag = function() {
     let height = Math.round(window.innerHeight * zoom); //get browser window height
     let scale;
 
-    console.log(width, height);
-
-    //if(container.clientHeight > height) { //if container doesn't fit the browser window
+      //resize
       scale = Math.min(width/container.clientWidth, height/container.clientHeight); //get the scale
-      console.log(scale);
       container.style.transform = 'scale(' + scale + ')'; //transform magazine container
       outer.style.width = container.clientWidth * scale + "px"; //set new width for scale (it must be smaller because of the conatiner transformation) to get centering working
-    //}
 
 }
 
