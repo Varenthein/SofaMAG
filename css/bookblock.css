@@ -105,9 +105,7 @@
 }
 
 /* Content display */
-.bb-content {
-	background: #fff;
-}
+
 
 .bb-vertical .bb-front .bb-content {
 	left: -100%;
@@ -167,7 +165,6 @@
 	top: 0;
 	left: 0;
 	display: none;
-	background: #fff;
 }
 
 /* No JS */
