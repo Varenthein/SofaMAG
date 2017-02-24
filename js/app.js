@@ -15,6 +15,7 @@ const resizeMag = function() {
       container.style.transform = 'scale(' + scale + ')'; //transform magazine container
       outer.style.width = container.clientWidth * scale + "px"; //set new width for scale (it must be smaller because of the conatiner transformation) to get centering working
 
+      document.body.scrollLeft = (document.body.scrollWidth - document.body.clientWidth) / 2 ;
 }
 
 //Zooming function
