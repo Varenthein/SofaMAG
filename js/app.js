@@ -6,15 +6,18 @@ let issue = ""; //global issue variable
 //Resizeing mag dunction
 const resizeMag = function() {
 
-    let width = window.innerWidth * zoom; //get browser window width
-    let height = window.innerHeight * zoom; //get browser window height
+    let width = Math.round(window.innerWidth * zoom); //get browser window width
+    let height = Math.round(window.innerHeight * zoom); //get browser window height
     let scale;
 
-    if(container.clientHeight > height) { //if container doesn't fit the browser window
+    console.log(width, height);
+
+    //if(container.clientHeight > height) { //if container doesn't fit the browser window
       scale = Math.min(width/container.clientWidth, height/container.clientHeight); //get the scale
+      console.log(scale);
       container.style.transform = 'scale(' + scale + ')'; //transform magazine container
       outer.style.width = container.clientWidth * scale + "px"; //set new width for scale (it must be smaller because of the conatiner transformation) to get centering working
-    }
+    //}
 
 }
 
@@ -97,7 +100,7 @@ if($_GET['id'] == "undefined") { //if id specified
   else {
 
     issue = issue[0];
-    
+
     //load styling files and data
     loadFile(`templates/${issue.template}/template.js`,"js");
     loadFile(`templates/${issue.template}/style.css`,"css");
