@@ -171,13 +171,12 @@ Na sezon 2007/08 po rocznej przerwie do klubu wrócił Vladimir Weiss i jego umi
 
               `).get()},
     { "page": "13", "content": new page(13,`
-      <p>W telewizji trwa transmisja zIgrzysk Olimpijskich w Sydney, gdzie uśmiechnięta Marion Jones zdobywa właśnie piąty medal w zmaganiach lekkoatletycznych na jednej imprezie. Niewiarygodne. Amerykanka stała się w tym momencie idolką bohatera tej historii. Dołączyła do swojego rodaka, który po wyleczeniu raka wygrał najtrudniejszy wyścig kolarski świata. Po obejrzeniu niesamowitych ucieczek Lance’a Armstronga, chłopiec niejednokrotnie, jadąc rowerem przez pobliskie wioski, wyobrażał sobie, że nie znajduje się wcale na dziurawej drodze kilka kilometrów od domu, ale raczej na premii górskiej w Pirenejach, gdzie lada moment urwie się od peletonu i wygra kolejny etap wyimaginowanego wyścigu.</p>
-      <br><br><br>
-      <p>
-      <div class="img" style="display:inline-block">
-        <img style="width: 100%" src="${issue.url}/img/lance2.jpg" alt="">
-        <span><em>Lance okazał się oszustem</em></span>
-      </div></p>
+      <p>W telewizji trwa transmisja zIgrzysk Olimpijskich w Sydney, gdzie uśmiechnięta Marion Jones zdobywa właśnie piąty medal w zmaganiach lekkoatletycznych na jednej imprezie. Niewiarygodne. Amerykanka stała się w tym momencie idolką bohatera tej historii.
+        <div class="img" style="display:inline-block">
+          <img style="width: 100%" src="${issue.url}/img/lance2.jpg" alt="">
+          <span><em>Lance okazał się oszustem</em></span>
+        </div>Dołączyła do swojego rodaka, który po wyleczeniu raka wygrał najtrudniejszy wyścig kolarski świata. Po obejrzeniu niesamowitych ucieczek Lance’a Armstronga, chłopiec niejednokrotnie,  jadąc rowerem przez pobliskie wioski, wyobrażał sobie, że nie znajduje się wcale na dziurawej drodze kilka kilometrów od domu, ale raczej na premii górskiej w Pirenejach, gdzie lada moment urwie się od peletonu i wygra kolejny etap wyimaginowanego wyścigu.</p>
+
 
 <p>Młody człowiek naiwnie wierzy, że to, co widzi na ekranie telewizora jest prawdą. Że istnieją jednostki, potrafiące w naturalny sposób, bez oszukiwania odnosić druzgocące zwycięstwa. W kinie John Rambo bez problemu pokonywał kilkudziesięciu przeciwników, więc dlaczego miałby kogoś dziwić widok radosnej Jones, ośmieszającej rywalki w biegach na kilku dystansach i w skoku w dal? Skąd pomysł, że zwykły człowiek nie mógłby odjeżdżać innym kolarzom na każdym etapie Wielkiej Pętli, tak, jak Armstrong? Przecież w Szklanej Pułapce John McClane też robił ze swoimi wrogami, co chciał i nikt nie mógł mu podskoczyć. Niech się wstydzi ten, kto podważa mit niezniszczalnego Lance’a. Ludzie, którzy zarzucają mu nieuczciwość są zwyczajnie zazdrośni. To jest zbyt piękna historia, by miała okazać się farsą.</p>
 
@@ -189,7 +188,8 @@ Na sezon 2007/08 po rocznej przerwie do klubu wrócił Vladimir Weiss i jego umi
       <p style="text-align:center">*****</p>
 <p>Jest rok 2016. Warszawa. Młody mężczyzna przeprowadził się tutaj kilka lat temu. W wolnym czasie wychodzi pobiegać po mieście – obowiązkowo z telefonem, żeby potem pochwalić się swoim wynikiem znajomym w internecie. Do pracy stara się dojeżdżać rowerem – dla zdrowotności i dla zaoszczędzenia czasu, który straciłby stojąc w korkach. Żyje obecnie w ciągłym stresie i w pośpiechu.</p>
 <p>Mężczyzna już nic sobie nie wyobraża, jadąc rowerem. Podczas joggingu z nikim się nie ściga, bardziej martwi się tym, czy ktoś zwróci uwagę na jego nowe legginsy. Tegoroczny Tour de France oglądał jednym okiem, raczej z przyzwyczajenia. Już dawno ten wyścig przestał go interesować. Podczas Igrzysk Olimpijskich w Rio bardziej interesował się tym, czy faktycznie brazylijskie komary będą roznosić wirus Zika, aniżeli rywalizacją lekkoatletów.</p>
-<p><div style="float:right;width:30px;height:40px"></div>Kilkanaście lat temu naiwnie uwierzył, że to, co widzi na ekranie telewizora jest prawdą, po czym jego ideały legły w gruzach. Ludzie, na których się wzorował, okazali się oszustami, a ich spektakularne działania miały tyle samo wspólnego z prawdą, co popisy Johna Rambo i Johna McClane’a. </p>
+<div style="float:right;width:30px;height:40px"></div>
+<p>Kilkanaście lat temu naiwnie uwierzył, że to, co widzi na ekranie telewizora jest prawdą, po czym jego ideały legły w gruzach. Ludzie, na których się wzorował, okazali się oszustami, a ich spektakularne działania miały tyle samo wspólnego z prawdą, co popisy Johna Rambo i Johna McClane’a. </p>
 <p>Na zaufanie pracuje się niekiedy przez całe życie, a stracić je można w mgnieniu oka. Przez skandale dopingowe, sport staje raz po raz przed ciężką próbą. Ludziom coraz trudniej jest uwierzyć, że za kolejnymi fenomenalnymi wynikami stoi jedynie natura i ciężki trening. A przecież to jest istotą sportu – pokonywanie słabości własnego ciała. W czasach, gdy coraz poważniejszym zagrożeniem staje się również doping technologiczny oraz hazard i komercja, potrzeba wielkiej wiary i zaangażowania uczciwych ludzi, by sportowa rywalizacja pozostała zgodna z ideałami Pierre’a de Coubertin’a. Sport potrzebuje ratunku przed zbyt dużymi pieniędzmi i zbyt zaawansowaną farmakologią. Lecz czy na ratunek nie jest aby za późno?</p>
 
                 `).get()},

@@ -53,3 +53,26 @@ const page = function(page_nr = 0, text = "Empty", excerpt = "", type = "content
     `; }
 }
 }
+
+const fullpage = function(page_nr = 0, title = "Untitled", category = "No category", main_image = "", tags = [], license) {
+  this.title = title;
+  this.author = author;
+  this.category = category;
+  this.main_image = main_image;
+  this.tags = tags;
+  this.license = license;
+  this.get = () => {
+
+    let title_len = this.title.length;
+    let title_size = 100-this.title.length+'px';
+    console.dir(this.tags);
+    return `
+    <span class="nr"><strong>${page_nr}</strong></span>
+    <header style="background:url('${issue.url}/img/${this.main_image}');background-size:cover;background-position:center center;">
+      <div class="cat"><span class="romb"></span>${this.category}</div>
+      <h1 style="font-size:${title_size}">${this.title}</h1>
+      <div class="tags"><span class="license">${this.license}</span>${this.tags.join(", ")}</div>
+    </header>
+    `;
+}
+}
