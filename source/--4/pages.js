@@ -171,7 +171,7 @@ Na sezon 2007/08 po rocznej przerwie do klubu wrócił Vladimir Weiss i jego umi
 
               `).get()},
     { "page": "13", "content": new page(13,`
-      <p>W telewizji trwa transmisja zIgrzysk Olimpijskich w Sydney, gdzie uśmiechnięta Marion Jones zdobywa właśnie piąty medal w zmaganiach lekkoatletycznych na jednej imprezie. Niewiarygodne. Amerykanka stała się w tym momencie idolką bohatera tej historii.
+      <p>W telewizji trwa transmisja z Igrzysk Olimpijskich w Sydney, gdzie uśmiechnięta Marion Jones zdobywa właśnie piąty medal w zmaganiach lekkoatletycznych na jednej imprezie. Niewiarygodne. Amerykanka stała się w tym momencie idolką bohatera tej historii.
         <div class="img" style="display:inline-block">
           <img style="width: 100%" src="${issue.url}/img/lance2.jpg" alt="">
           <span><em>Lance okazał się oszustem</em></span>
@@ -193,4 +193,25 @@ Na sezon 2007/08 po rocznej przerwie do klubu wrócił Vladimir Weiss i jego umi
 <p>Na zaufanie pracuje się niekiedy przez całe życie, a stracić je można w mgnieniu oka. Przez skandale dopingowe, sport staje raz po raz przed ciężką próbą. Ludziom coraz trudniej jest uwierzyć, że za kolejnymi fenomenalnymi wynikami stoi jedynie natura i ciężki trening. A przecież to jest istotą sportu – pokonywanie słabości własnego ciała. W czasach, gdy coraz poważniejszym zagrożeniem staje się również doping technologiczny oraz hazard i komercja, potrzeba wielkiej wiary i zaangażowania uczciwych ludzi, by sportowa rywalizacja pozostała zgodna z ideałami Pierre’a de Coubertin’a. Sport potrzebuje ratunku przed zbyt dużymi pieniędzmi i zbyt zaawansowaną farmakologią. Lecz czy na ratunek nie jest aby za późno?</p>
 
                 `).get()},
+                { "page": "14", "content": new fullpage(14,"Valbuena: L'art de la chute","Piłka nożna","valbuena.jpg",["#Francja", "#Ligue1"],"fot: Вячеслав Евдокимов").get()},
+                { "page": "15", "content": new page(15,`
+                  <p>
+                  <strong>Ugruntowana pozycja w lidze</strong></p>
+    <p>Kolejne sezony w lidze słowackiej, to utrzymywanie wypracowanego poziomu i podwójne wicemistrzostwo kraju, a w Pucharze UEFA dwukrotne docieranie do ostatniej fazy eliminacji, lecz tam już na fazę grupową nie pozwalały Espanyol, a rok później Panathinaikos.
+    Na sezon 2007/08 po rocznej przerwie do klubu wrócił Vladimir Weiss i jego umiejętności trenerskie poprowadziły Artmedię do drugiego w historii mistrzostwa, dzięki też ustabilizowaniu formy czołowego już JurajaHalenara, który zdobył w rozgrywkach 16 bramek. W eliminacjach Ligi Mistrzów po wyeliminowaniu maltańskiej Valetty i fińskiego Tampere United, w trzeciej rundzie lepszy okazał się Juventus „degradując” Słowaków do ostatniej fazy eliminacji Pucharu UEFA, gdzie los przypisał Bragę, której niestety nie udało się ich pokonać. </p>
+
+    <p>Były to ostatnie miłe chwile w dotychczasowej historii klubu… </p>
+
+    <p><strong>„Pikowanie” w dół</strong></p>
+    <p>Po mistrzowskim sezonie Weiss objął reprezentację Słowacji, lecz największym problemem okazało się odejście z klubu inwestora Ivana Kmotrika, który postanowił wykupić akcje sąsiedniego klubu Slovana Bratysława, by tam budować potęgę ligową. Gdy dopływ finansowy w Artmedii zaczął się kończyć, odchodzili też i czołowi piłkarze z powodu nie otrzymywania pensji, stadion został zamknięty, a klub w sezonie 2008/09 zajął 6 miejsce w lidze,<div style="float:right;width:30px;height:40px"></div> by już w kolejnym dołować w tabeli i zaliczyć spadek do 2. Ligi. Przez dwa lata gry poziom niżej sytuacja była coraz gorsza, czego efektem okazał się spadek do 3. Ligi w 2012 roku. </p>
+
+    <p>Grając ekipą mieszaną z młodzieży i z pozostałości po 2. Lidze, Artmedia była nawet na tle trzecioligowców zespołem piłkarsko słabym. Sezon 2012/13 ukończony został na dalekim 11 miejscu, a rok później trzeba było zacząć po prostu wszystko od nowa. </p>
+
+    <p>Tak oto w 2014 roku nazwa klubu została zmieniona na FC Petrzalka Akademia i zarząd zgłosił klub na sezon 2014/15 do rozgrywek V ligi, by w ten sposób krok po kroku na dobrych wynikach móc się odbudować. Obecnie grają tam już drugi sezon i są liderem, co może tlić nadzieje na to, że za kilka lat coś dobrego wyniknie z tej odbudowy i taką warto mieć nadzieję. </p>
+
+    <p>Stary stadion, na którym niegdyś dawna Artmedia rozgrywała swoje mecze został zrównany z ziemią i w to miejsce zostały postawione hotele. Cała sytuacja klubu pokazuje, że gdy ktoś potrafi dobrze zainwestować pieniądze, to może wszystko fajnie funkcjonować i jest realny sukces, lecz gdy tego zabraknie, nie ma po prostu jak tego utrzymać i z reguły kończy się to upadkiem. Jednak historia w pamięci tych starszych kibiców zostanie, a przeżycia z Ligi Mistrzów po prostu zapomnieć się nie da. Chyba jednak nie powinni żałować tego co się wydarzyło, a jedynie tego, że inwestor nagle postanowił zmienić otoczenie. </p>
+
+
+
+                  `).get()},
   ]

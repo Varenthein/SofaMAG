@@ -56,7 +56,6 @@ const page = function(page_nr = 0, text = "Empty", excerpt = "", type = "content
 
 const fullpage = function(page_nr = 0, title = "Untitled", category = "No category", main_image = "", tags = [], license) {
   this.title = title;
-  this.author = author;
   this.category = category;
   this.main_image = main_image;
   this.tags = tags;
@@ -65,14 +64,31 @@ const fullpage = function(page_nr = 0, title = "Untitled", category = "No catego
 
     let title_len = this.title.length;
     let title_size = 100-this.title.length+'px';
-    console.dir(this.tags);
+
     return `
     <span class="nr"><strong>${page_nr}</strong></span>
-    <header style="background:url('${issue.url}/img/${this.main_image}');background-size:cover;background-position:center center;">
+    <header style="background:url('${issue.url}/img/${this.main_image}');background-size:cover;background-position:center center;height:100%">
       <div class="cat"><span class="romb"></span>${this.category}</div>
       <h1 style="font-size:${title_size}">${this.title}</h1>
       <div class="tags"><span class="license">${this.license}</span>${this.tags.join(", ")}</div>
     </header>
     `;
+}
+}
+
+const fulltext = function(page_nr = 0, text = "Empty", excerpt = "") {
+  this.text = text;
+  this.excerpt = excerpt;
+  this.get = () => {
+     return `
+     <div class="text">
+       <img alt="${this.author}" src="${issue.url}/img/authors/${this.author}.png">
+       <p><strong>${this.excerpt}</strong></p>
+        <div class="content">
+        ${this.text}
+        </div>
+     </div>
+    `;
+
 }
 }
