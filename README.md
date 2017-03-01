@@ -1,2 +1,2 @@
 # SofaMAG
-Magazine viewe for Sofa Sport Magazyn
+Magazine viewer for Sofa Sport Magazyn
