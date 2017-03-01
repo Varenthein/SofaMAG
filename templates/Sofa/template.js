@@ -76,9 +76,10 @@ const fullpage = function(page_nr = 0, title = "Untitled", category = "No catego
 }
 }
 
-const fulltext = function(page_nr = 0, text = "Empty", excerpt = "") {
+const fulltext = function(page_nr = 0, text = "Empty", excerpt = "", author) {
   this.text = text;
   this.excerpt = excerpt;
+  this.author = author;
   this.get = () => {
      return `
      <div class="text">
