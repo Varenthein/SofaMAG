@@ -3,7 +3,7 @@ const outer = document.querySelector('.outer'); //get outer
 let zoom = 1; //global zooming setting
 let issue = ""; //global issue variable
 
-//Resizeing mag dunction
+//Resizing mag dunction
 const resizeMag = function() {
 
     let width = Math.round(window.innerWidth * zoom); //get browser window width

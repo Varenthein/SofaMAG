@@ -23,7 +23,6 @@ const page = function(page_nr = 0, text = "Empty", excerpt = "", type = "content
   this.get = () => {
   if(this.type != "with_image") {
      return `
-     <span class="nr"><strong>${page_nr}</strong></span>
      <div class="text">
       <div class="content">
       ${this.text}
